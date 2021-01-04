@@ -1,0 +1,12 @@
+{
+    "name": "noemierochard/recipe-app_php",
+    "license": "MIT",
+    "description": "",
+    "authors": [
+        {
+            "name": "Noémie ROCHARD",
+            "email": "nrochard@student.42.fr"
+        }
+    ],
+    "require": {}
+}
