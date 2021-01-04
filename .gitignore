@@ -1,1 +1,11 @@
-/vendor/
+vendor/
+
+.env
+
+.DS_STORE
+
+public/.DS_STORE
+
+public/img/.DS_STORE
+
+cache
