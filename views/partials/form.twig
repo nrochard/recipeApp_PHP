@@ -1,0 +1,24 @@
+<form method="post" enctype="multipart/form-data" @submit.prevent="postRecipe">
+    <h3 class="mb-4">Ajouter une recette 👩‍🍳</h3>
+    <div class="form-group">
+        <label for="name">Nom de la recette</label>
+        <input type="text" class="form-control" id="name" name="name" v-model="name">
+    </div>
+    <div class="form-group">
+        <label for="ingredients">Ingrédients</label>
+        <textarea class="form-control" id="ingredients" rows="3" name="ingredients" v-model="ingredients"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="preparation">Préparation</label>
+        <textarea class="form-control" id="preparation" rows="3" name="preparation" v-model="preparation"></textarea>
+    </div>  
+    <div class="form-group">
+        <label for="time">Temps</label>
+        <input type="number" class="form-control" id="time" name="time" v-model="time">
+    </div>                 
+    <div class="form-group">
+        <label for="people">Personnes</label>
+        <input type="number" class="form-control" id="people" name="people" v-model="people">
+    </div> 
+    <button type="submit" class="btn btn-warning">Cuisiner</button>                   
+</form> 

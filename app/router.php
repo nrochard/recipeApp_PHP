@@ -8,7 +8,7 @@ use App\Controllers\RecipeController;
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $method = strtolower($_SERVER['REQUEST_METHOD']);
 
-$appController = new AppController($twig);
+$appController = new AppController($twig, $db);
 $recipeController = new RecipeController($twig, $db);
 
 switch ($method) {
@@ -26,10 +26,26 @@ switch ($method) {
                 break;
         }
         break;  
-        
     case 'post':
-        $recipeController->postRecipe();
+        switch ($uri) {
+            case '/api':
+                $recipeController->post();
+                break;
+            default:
+                http_response_code(404);
+                break;
+        }
         break;
+    case 'delete':
+        switch ($uri) {
+            case '/api':
+                $recipeController->delete();
+                break;
+            default:
+                http_response_code(404);
+                break;
+        }
+        break;  
     default:
         break;
 }

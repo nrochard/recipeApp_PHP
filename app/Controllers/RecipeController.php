@@ -19,11 +19,19 @@ class RecipeController
         $recipes = $recipe->getAllRecipes();
         echo $recipes;
     }
-    public function postRecipe()
+    public function post()
     {
-
+        header('Content-Type: application/json');
+        $recipe = new Recipe($this->db);
+        $recipes = $recipe->postRecipe();
+        echo $recipes;
     }
-
+    public function delete()
+    {
+        header('Content-Type: application/json');
+        $recipe = new Recipe($this->db);
+        $recipes = $recipe->deleteRecipe();
+    }    
 }
 
 ?>
