@@ -13,3 +13,7 @@ Powered by [Vue.JS](https://v3.vuejs.org/), [Twig](https://twig.symfony.com/doc/
 
 
 ## What it does
+
+- Add a recipe
+- See all the recipes
+- Delete a recipe
