@@ -8,7 +8,7 @@ Powered by [Vue.JS](https://v3.vuejs.org/), [Twig](https://twig.symfony.com/doc/
 ## What it looks like
 
 <p align="center">
-  <img width="550" height="650" src="https://github.com/nrochard/recipeApp_PHP/blob/main/public/img/screen.png">
+  <img width="650" height="700" src="https://github.com/nrochard/recipeApp_PHP/blob/main/public/img/screen.png">
 </p>
 
 
